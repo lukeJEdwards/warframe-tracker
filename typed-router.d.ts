@@ -22,10 +22,16 @@ declare module 'vue-router/auto-routes' {
     '/companions/': RouteRecordInfo<'/companions/', '/companions', Record<never, never>, Record<never, never>>,
     '/mods/': RouteRecordInfo<'/mods/', '/mods', Record<never, never>, Record<never, never>>,
     '/relics/': RouteRecordInfo<'/relics/', '/relics', Record<never, never>, Record<never, never>>,
+    '/relics/arcanes': RouteRecordInfo<'/relics/arcanes', '/relics/arcanes', Record<never, never>, Record<never, never>>,
+    '/relics/void-relics': RouteRecordInfo<'/relics/void-relics', '/relics/void-relics', Record<never, never>, Record<never, never>>,
     '/warframe/': RouteRecordInfo<'/warframe/', '/warframe', Record<never, never>, Record<never, never>>,
     '/warframe/[name]': RouteRecordInfo<'/warframe/[name]', '/warframe/:name', { name: ParamValue<true> }, { name: ParamValue<false> }>,
-    '/warframe/orgianl': RouteRecordInfo<'/warframe/orgianl', '/warframe/orgianl', Record<never, never>, Record<never, never>>,
-    '/warframe/prime': RouteRecordInfo<'/warframe/prime', '/warframe/prime', Record<never, never>, Record<never, never>>,
     '/weapons/': RouteRecordInfo<'/weapons/', '/weapons', Record<never, never>, Record<never, never>>,
+    '/weapons/melee/': RouteRecordInfo<'/weapons/melee/', '/weapons/melee', Record<never, never>, Record<never, never>>,
+    '/weapons/melee/[name]': RouteRecordInfo<'/weapons/melee/[name]', '/weapons/melee/:name', { name: ParamValue<true> }, { name: ParamValue<false> }>,
+    '/weapons/primary/': RouteRecordInfo<'/weapons/primary/', '/weapons/primary', Record<never, never>, Record<never, never>>,
+    '/weapons/primary/[name]': RouteRecordInfo<'/weapons/primary/[name]', '/weapons/primary/:name', { name: ParamValue<true> }, { name: ParamValue<false> }>,
+    '/weapons/secondary/': RouteRecordInfo<'/weapons/secondary/', '/weapons/secondary', Record<never, never>, Record<never, never>>,
+    '/weapons/secondary/[name]': RouteRecordInfo<'/weapons/secondary/[name]', '/weapons/secondary/:name', { name: ParamValue<true> }, { name: ParamValue<false> }>,
   }
 }

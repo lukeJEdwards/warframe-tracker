@@ -5,7 +5,7 @@ import vue from '@vitejs/plugin-vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
 
 import VueRouter from "unplugin-vue-router/vite";
-import { imagetools } from "vite-imagetools";
+import Icons from "unplugin-icons/vite";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -35,7 +35,9 @@ export default defineConfig({
     }),
     vue(),
     vueDevTools(),
-    imagetools(),
+    Icons({
+      autoInstall: true,
+    }),
   ],
   resolve: {
     alias: {

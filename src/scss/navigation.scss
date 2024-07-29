@@ -1,0 +1,83 @@
+@use 'sass:color';
+
+a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 96px;
+
+    background-color: #101219;
+
+    ul {
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-items: center;
+
+    padding: 20px;
+
+    &:last-child ul {
+        left: -75%;
+    }
+}
+
+nav li ul {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    gap: 0;
+
+    top: 100%;
+    left: -20px;
+    min-width: 200px;
+
+    border-top: 8px solid #1d1d1d;
+
+}
+
+nav li ul a {
+
+    background-color: #101219;
+
+    &:first-child {
+        border-top-right-radius: 6px;
+        border-top-left-radius: 6px;
+    }
+
+    &:last-child {
+        border-bottom-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+    }
+
+    &:hover {
+        cursor: pointer;
+        background-color: lighten(#101219, 3%);
+    }
+}
+
+nav li:hover > ul,
+nav li:hover > ul li {
+    display: flex;
+}

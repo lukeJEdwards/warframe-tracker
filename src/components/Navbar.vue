@@ -31,12 +31,12 @@ const WarframeRoutes: route[] = [
     {
         path: "/warframe",
         name: "Original",
-        query: { type: "Original" }
+        query: { type: "suits", prime: "false" }
     },
     {
         path: "/warframe",
         name: "Prime",
-        query: { type: "Prime" }
+        query: { type: "suits", prime: "true" }
     }
 ]
 const WeaponRoutes: route[] = [

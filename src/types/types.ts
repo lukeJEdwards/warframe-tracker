@@ -5,3 +5,14 @@ export type route = {
   name: string;
   query?: LocationQueryRaw;
 };
+
+
+export type GenericSchema = {
+  uniqueName: string;
+  name: string;
+  description: string;
+  codexSecret: boolean;
+  textureLocation?: string;
+  parentName?: string;
+  excludeFromCodex?: boolean;
+};
